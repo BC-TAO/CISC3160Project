@@ -1,5 +1,3 @@
-package projectSample;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -13,7 +11,9 @@ public class SimpleLanguageInterpreter {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your program (end with empty line):");
+        System.out.println("Enter your program (end with empty line, separated each token by space):");
+        System.out.println("Example:");
+        System.out.println("x = 1 ;");
 
         StringBuilder program = new StringBuilder();
         while (true) {
